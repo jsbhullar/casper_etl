@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include casper_etl *.css
+recursive-include casper_etl *.csv
+recursive-include casper_etl *.html
+recursive-include casper_etl *.ico
+recursive-include casper_etl *.js
+recursive-include casper_etl *.json
+recursive-include casper_etl *.md
+recursive-include casper_etl *.png
+recursive-include casper_etl *.py
+recursive-include casper_etl *.svg
+recursive-include casper_etl *.txt
+recursive-exclude casper_etl *.pyc
