@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2023-11-02 12:56:20.541780",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "si_name",
+  "company_url",
+  "company_info",
+  "si_states_section",
+  "states",
+  "si_contacts_section",
+  "si_contacts"
+ ],
+ "fields": [
+  {
+   "fieldname": "si_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SI Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_url",
+   "fieldtype": "Data",
+   "label": "Company URL",
+   "options": "URL"
+  },
+  {
+   "fieldname": "company_info",
+   "fieldtype": "Text",
+   "label": "Company Info"
+  },
+  {
+   "fieldname": "states",
+   "fieldtype": "Table",
+   "label": "States",
+   "options": "SI States"
+  },
+  {
+   "fieldname": "si_contacts",
+   "fieldtype": "Table",
+   "label": "SI Contacts",
+   "options": "SI Contacts"
+  },
+  {
+   "fieldname": "si_states_section",
+   "fieldtype": "Section Break",
+   "label": "SI States"
+  },
+  {
+   "fieldname": "si_contacts_section",
+   "fieldtype": "Section Break",
+   "label": "SI Contacts"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-02 14:32:34.866311",
+ "modified_by": "Administrator",
+ "module": "Casper Etl",
+ "name": "SI",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "DataContext",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "si_name"
+}

@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2023-11-02 21:02:02.907854",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "target_name",
+  "assigned_to_type",
+  "assigned_to_id",
+  "target_frequency",
+  "start_date",
+  "end_date",
+  "deadline",
+  "description",
+  "target_details_section",
+  "metrics"
+ ],
+ "fields": [
+  {
+   "fieldname": "target_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Target Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "assigned_to_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Assigned To Type",
+   "options": "Employee\nTeam",
+   "reqd": 1
+  },
+  {
+   "fieldname": "assigned_to_id",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "label": "Assigned To ID",
+   "options": "assigned_to_type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "target_frequency",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Target Frequency",
+   "options": "Daily\nWeekly\nMonthly",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "deadline",
+   "fieldtype": "Date",
+   "label": "Deadline"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "target_details_section",
+   "fieldtype": "Section Break",
+   "label": "Target Details"
+  },
+  {
+   "fieldname": "metrics",
+   "fieldtype": "Table",
+   "label": "Metrics",
+   "options": "Target Metrics"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-02 21:05:09.101893",
+ "modified_by": "Administrator",
+ "module": "Casper Etl",
+ "name": "Target",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
