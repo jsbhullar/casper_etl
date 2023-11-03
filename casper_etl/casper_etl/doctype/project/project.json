@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2023-11-03 11:49:15.955768",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_name",
+  "project_info",
+  "manager_type",
+  "manager_id",
+  "start_date",
+  "end_date",
+  "status",
+  "project_states_section",
+  "states",
+  "project_vendors_section",
+  "vendors"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Project Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project_info",
+   "fieldtype": "Text",
+   "label": "Project Info"
+  },
+  {
+   "fieldname": "manager_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Manager Type",
+   "options": "SI\nVendor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "manager_id",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "label": "Manager ID",
+   "options": "manager_type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nPlanned\nIn Progress\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "project_states_section",
+   "fieldtype": "Section Break",
+   "label": "Project States"
+  },
+  {
+   "fieldname": "states",
+   "fieldtype": "Table",
+   "label": "States",
+   "options": "Project States"
+  },
+  {
+   "fieldname": "project_vendors_section",
+   "fieldtype": "Section Break",
+   "label": "Project Vendors"
+  },
+  {
+   "fieldname": "vendors",
+   "fieldtype": "Table",
+   "label": "Vendors",
+   "options": "Project Vendors"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-03 11:51:07.095012",
+ "modified_by": "Administrator",
+ "module": "Casper Etl",
+ "name": "Project",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "DataContext",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
